@@ -15,5 +15,5 @@ var pio = new Paul_Pio({
 			}]
 		},
     "night": "single.night()",
-    "model": ["https://cdn.jsdelivr.net/gh/ywenhao/cnblog/model.json"]
+    "model": ["https://cdn.jsdelivr.net/gh/ywenhao/cnblog/static/model.json"]
 });
