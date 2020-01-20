@@ -105,7 +105,7 @@ var Paul_Pio = function (prop) {
                     text = '已经这么晚了呀，早点休息吧，晚安~';
                 }
                 else{
-                    text = "奇趣保罗说：这个是无法被触发的吧，哈哈";
+                    text = "保罗说：这个是无法被触发的吧，哈哈";
                 }
 
                 modules.render(text);
@@ -125,6 +125,7 @@ var Paul_Pio = function (prop) {
             // 返回首页
             elements.home.onclick = function () {
                 location.href = current.root;
+		    console.log('home')
             };
             elements.home.onmouseover = function () {
                 modules.render(prop.content.home || "点击这里回到首页！");
