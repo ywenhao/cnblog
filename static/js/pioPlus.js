@@ -1,9 +1,7 @@
 /* ----
 # Pio Plugin
-# By: Dreamer-Paul
 # Last Update: 2019.12.10
 一个支持更换 Live2D 模型的 Typecho 插件。
-本代码为奇趣保罗原创，并遵守 GPL 2.0 开源协议。欢迎访问我的博客：https://paugram.com
 ---- */
 
 var Paul_Pio = function (prop) {
