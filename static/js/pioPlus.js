@@ -116,14 +116,12 @@ var Paul_Pio = function (prop) {
         },
         // 触摸
         touch: function () {
-            console.log('touch')
             current.canvas.onclick = function () {
                 modules.render(prop.content.touch || ["你在干什么？", "再摸我就报警了！", "HENTAI!", "不可以这样欺负我啦！"]);
             };
         },
         // 右侧按钮
         buttons: function () {
-            console.log('button')
             // 返回首页
             elements.home.onclick = function () {
                 location.href = current.root;
