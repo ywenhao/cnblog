@@ -152,11 +152,15 @@ var Paul_Pio = function (prop) {
 
             // 夜间模式
             if(prop.night){
+                var night =  sessionStorage.getItem('night');
+                if (night) document.querySelector('.night').style.display = night;
                 elements.night.onclick = function () {
-                    if (document.querySelector('.night').style.display) {
-                        document.querySelector('.night').style.display = "";
+                    if (document.querySelector('.night').style.display == "none") {
+                        document.querySelector('.night').style.display = "block";
+                        sessionStorage.setItem('night', 'block');
                     } else {
                         document.querySelector('.night').style.display = "none";
+                        sessionStorage.setItem('night', 'none');
                     }
                 };
                 elements.night.onmouseover = function () {
