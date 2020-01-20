@@ -11,7 +11,7 @@ var Paul_Pio = function (prop) {
         menu: document.querySelector(".pio-container .pio-action"),
         canvas: document.getElementById("pio"),
         body: document.getElementsByClassName("pio-container")[0],
-        root: document.location.protocol +'//' + document.location.hostname +'/'
+        root: document.location.protocol +'//' + document.location.hostname +'/'+ document.location.pathname.split('/')[1]
     };
 
     /* - 方法 */
@@ -143,7 +143,7 @@ var Paul_Pio = function (prop) {
 
             // 关于我
             elements.info.onclick = function () {
-                window.open(prop.content.link || "https://paugram.com/coding/add-poster-girl-with-plugin.html");
+                window.open(prop.content.link || "https://google.cn");
             };
             elements.info.onmouseover = function () {
                 modules.render("想了解更多关于我的信息吗？");
