@@ -155,12 +155,12 @@ var Paul_Pio = function (prop) {
                 var night =  sessionStorage.getItem('night');
                 if (night) document.querySelector('.night').style.display = night;
                 elements.night.onclick = function () {
-                    if (document.querySelector('.night').style.display == "none") {
-                        document.querySelector('.night').style.display = "block";
-                        sessionStorage.setItem('night', 'block');
-                    } else {
+                    if (document.querySelector('.night').style.display == "block") {
                         document.querySelector('.night').style.display = "none";
                         sessionStorage.setItem('night', 'none');
+                    } else {
+                        document.querySelector('.night').style.display = "block";
+                        sessionStorage.setItem('night', 'block');
                     }
                 };
                 elements.night.onmouseover = function () {
