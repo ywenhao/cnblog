@@ -14,6 +14,6 @@ var pio = new Paul_Pio({
 				"text": ["欢迎参与本文评论，别发小广告噢~", "快来参加本文的评论吧~"]
 			}]
 		},
-    "night": "single.night()",
+    "night": true,
     "model": ["https://cdn.jsdelivr.net/gh/ywenhao/cnblog/model.json"]
 });

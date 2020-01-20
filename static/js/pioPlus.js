@@ -153,7 +153,11 @@ var Paul_Pio = function (prop) {
             // 夜间模式
             if(prop.night){
                 elements.night.onclick = function () {
-                    eval(prop.night);
+                    if (document.querySelector('.night').style.display) {
+                        document.querySelector('.night').style.display = "";
+                    } else {
+                        document.querySelector('.night').style.display = "none";
+                    }
                 };
                 elements.night.onmouseover = function () {
                     modules.render("夜间点击这里可以保护眼睛呢");
